@@ -1,0 +1,164 @@
+*{
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    flex-flow: column;
+}
+.menu{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.logo{
+    flex: 1;
+    z-index: 16;
+}
+.nav{
+    flex: 5;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.nav a{
+    margin: 10px;
+}
+.nav{
+    padding: 20px;
+}
+.social{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.nav li{
+    list-style: none;
+}
+.logo{
+    background: #413c69;
+}
+
+.nav a{
+    text-decoration: none;
+}
+.nav{
+    background: #413c69;
+    z-index: 10;
+}
+.social img{
+    width: 50px;
+    margin: auto;
+}
+.social{
+    background: #4a47a3;
+    margin: 0;
+}
+body{
+    background: black;
+}
+
+.section{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/*Img*/
+.publicidad img{
+    width: 200px;
+    margin-top: 50px;
+}
+
+
+li{
+    list-style: none;
+}
+
+.article{
+    padding: 30px;
+}
+.principal-text{
+    display: flex;
+    align-items: center;
+    background: #8ac4d0;
+    justify-content: center;
+    height: 400px;
+    background-image: url(https://wallpapercave.com/wp/wp8131604.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.principal-text h1{
+    font-family: 'DotGothic16', sans-serif;
+}
+.footer{
+    background: #28527a;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+}
+.pie{
+    margin: auto;
+}
+
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .nav{
+        transform: none;
+    }
+    .social{
+        height: 70px;
+    }
+}
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
+
+.F-container{
+    width: 60px;
+    background: #fff;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    transition: transform .5s;
+}
+.F-container:hover{
+    transform: scale(1.1);
+}
+
+
+.article .title-container{
+    background: #28527a;
+    border-radius: 10px;
+}
+
+.article h2{
+    margin-left: 5%;
+    transition: margin-left .5s;
+}
+.article h2:hover{
+    margin-left: 10%;
+}
+.nav a:hover{
+    color: #4ea;
+}
